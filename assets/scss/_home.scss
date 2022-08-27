@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------
+# product-sec
+--------------------------------------------------------------*/
+
+.product-sec{
+  padding: 75px 0px;
+  @media only screen and (max-width: 991px) {
+    padding: 50px 0px;
+   }
+   @media only screen and (max-width: 767px) {
+    padding: 40px 0px;
+   }
+  border-bottom: 1px solid rgba(16, 5, 5, 0.4);
+
+  .sec-t {
+    text-align: center;
+    h2{
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      @media only screen and (max-width: 1199px) {
+       font-size: 36px;
+       margin-bottom: 30px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 30px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 26px;
+       margin-top: 24px;
+      }
+    }
+  }
+  .p-single{
+    background-color: rgba(155, 156, 160, 0.15);
+    border-radius: 22px;
+    padding: 15px 20px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .p-img{
+      max-width: 100%;
+      height: auto;
+    }
+    .p-text{
+      margin-top: auto;
+      @media only screen and (max-width: 991px) {
+       padding-top: 10px;
+      }
+      h3{
+        font-family: $font-manrope;
+        font-weight: 600;
+        font-size: 21px;
+        @media only screen and (max-width: 1199px) {
+         font-size: 18px;
+        }
+      }
+      a{
+        text-decoration: none;
+        display: inline-block;
+        color: #5957C9;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all .2s ease-in;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# cta-sec
+--------------------------------------------------------------*/
+
+.cta-sec{
+  padding: 75px 0px;
+  @media only screen and (max-width: 991px) {
+    padding: 50px 0px;
+   }
+   @media only screen and (max-width: 767px) {
+    padding: 40px 0px;
+   }
+
+
+  .sec-t {
+    text-align: center;
+    margin-bottom: 45px;
+    @media only screen and (max-width: 1199px) {
+     margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 767px) {
+     margin-bottom: 26px;
+    }
+    h2{
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      @media only screen and (max-width: 1199px) {
+       font-size: 36px;
+       margin-bottom: 12px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 30px;
+       margin-bottom: 10px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 26px;
+      }
+    }
+    p{
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .cta-img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# insta-feed
+--------------------------------------------------------------*/
+.insta-feed{
+  padding: 75px 0px;
+  padding-top: 20px;
+  @media only screen and (max-width: 991px) {
+    padding: 50px 0px;
+    padding-top: 15px;
+
+   }
+   @media only screen and (max-width: 767px) {
+    padding: 40px 0px;
+    padding-top: 15px;
+   }
+
+
+  .sec-t {
+    text-align: center;
+    h2{
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      @media only screen and (max-width: 1199px) {
+       font-size: 36px;
+       margin-bottom: 30px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 30px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 26px;
+       margin-top: 24px;
+      }
+    }
+  }
+
+  .insta-single{
+    .feed-img{
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+  }
+}

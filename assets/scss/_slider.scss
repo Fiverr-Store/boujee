@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+# about-us
+--------------------------------------------------------------*/
+.about-us {
+	padding: 75px 0px;
+  border-bottom: 1px solid rgba(16, 5, 5, 0.4);
+  @media only screen and (max-width: 991px) {
+   padding: 50px 0px;
+  }
+  @media only screen and (max-width: 767px) {
+   padding: 40px 0px;
+  }
+	.abt-text {
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			@media only screen and (max-width: 1499px) {
+				font-size: 36px;
+			}
+			@media only screen and (max-width: 1199px) {
+				font-size: 32px;
+				margin-bottom: 15px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 28px;
+				margin-bottom: 10px;
+			}
+			@media only screen and (max-width: 482px) {
+				font-size: 24px;
+			}
+		}
+	}
+	.abt-img {
+		border-radius: 28px;
+		@media only screen and (max-width: 767px) {
+			border-radius: 20px;
+		}
+	}
+	.slider-btns {
+		margin-top: 30px;
+    @media only screen and (max-width: 991px) {
+     margin-top: 20px;
+     margin-bottom: 20px;
+    }
+	}
+	.btn-single {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 9px;
+		background-color: $primary-color;
+		color: $bg-white;
+		cursor: pointer;
+    outline: none;
+		img {
+			height: 16px;
+		}
+	}
+	.swiper-button-disabled {
+		background-color: #5957c9;
+		opacity: 0.15;
+	}
+}

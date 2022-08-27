@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# main-footer
+--------------------------------------------------------------*/
+
+.main-footer {
+	padding: 50px 0px 30px 0px;
+	background-color: rgba(70, 134, 160, 0.2);
+  @media only screen and (max-width: 767px) {
+    padding: 33px 0px 30px 0px;
+  }
+	.logo-footer {
+    display: block;
+		max-height: 110px;
+    @media only screen and (max-width: 767px) {
+      margin-left: auto;
+    margin-right: auto;
+    }
+	}
+	.footer-widget {
+		h5 {
+			font-family: $font-manrope;
+			font-size: 17px;
+			font-weight: 600;
+			color: $bg-black;
+			margin-bottom: 10px;
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 4px;
+        font-size: 16px;
+      }
+		}
+	}
+	p {
+		color: #4a4a4a;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	a {
+		color: #4a4a4a;
+		font-size: 14px;
+	}
+	.footer-links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 1px;
+			}
+		}
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: #4a4a4a;
+			font-size: 14px;
+			transition: all 0.2s ease-in;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.footer-form {
+		position: relative;
+		.form-control {
+			background-color: transparent;
+			border: 1px solid #4a4a4a;
+			border-radius: 10px;
+			height: 42px;
+			font-size: 14px;
+		}
+		.btn-submit {
+			display: inline-block;
+			text-decoration: none;
+			height: 42px;
+			padding: 5px 20px;
+			font-size: 14px;
+			background-color: $primary-color;
+			color: $bg-white;
+			border-radius: 10px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: 0;
+		}
+	}
+  .footer-social{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    li{
+      display: inline-block;
+      &:not(:last-child) {
+      margin-right: 10px;
+      }
+    }
+    a{
+      display: inline-block;
+      img{
+        height: 22px;
+      }
+    }
+  }
+
+  .legal{
+    text-align: center;
+    padding-top: 60px;
+    @media only screen and (max-width: 991px) {
+     padding-top: 40px;
+    }
+    @media only screen and (max-width: 767px) {
+     padding-top: 30px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
