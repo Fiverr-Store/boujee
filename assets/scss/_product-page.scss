@@ -2,133 +2,199 @@
 # page-hero
 --------------------------------------------------------------*/
 .page-hero {
-  position: relative;
+	position: relative;
 	padding-top: 122px;
-  @media only screen and (max-width: 991px) {
-   padding-top: 0px;
-   margin-top: 50px;
-   background-image: url("../img/product-page/page-m-bg.png");
-   background-position: center;
+	@media only screen and (max-width: 991px) {
+		padding-top: 0px;
+		margin-top: 50px;
+		background-image: url("../img/product-page/page-m-bg.png");
+		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    &::before{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($bg-black, 0.54);
-    }
-  }
-  @media only screen and (max-width: 767px) {
-   height: 250px;
-  }
+		width: 100%;
+		height: 300px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($bg-black, 0.54);
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		height: 250px;
+	}
 	.page-bg {
 		position: relative;
-    @media only screen and (min-width: 992px) {
-      background-image: url("../img/product-page/page-bg.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      width: 100%;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
-      &::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($bg-black, 0.54);
-      }
-    }
-
+		@media only screen and (min-width: 992px) {
+			background-image: url("../img/product-page/page-bg.jpg");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 20px;
+			width: 100%;
+			height: 300px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			overflow: hidden;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($bg-black, 0.54);
+			}
+		}
 	}
-  .page-text{
-    position: relative;
-    h1{
-      font-size: 40px;
-      font-weight: 400;
-      color: $bg-white;
-      @media only screen and (max-width: 991px) {
-       font-size: 35px;
-      }
-      @media only screen and (max-width: 767px) {
-       font-size: 30px;
-      }
-    }
-  }
+	.page-text {
+		position: relative;
+		h1 {
+			font-size: 40px;
+			font-weight: 400;
+			color: $bg-white;
+			@media only screen and (max-width: 991px) {
+				font-size: 35px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 30px;
+			}
+		}
+	}
 }
-
 
 /*--------------------------------------------------------------
 # p-modal
 --------------------------------------------------------------*/
 
-.p-modal{
-  .modal-content{
-    border-radius: 20px;
-    overflow: hidden;
+.p-modal {
+	.modal-content {
+		border-radius: 20px;
+		border: 0;
+		overflow: hidden;
+	}
+	.modal-header {
+		border-radius: 0;
+	}
+	.modal-body {
+		padding: 20px 10px;
+	}
+	.modal-title {
+		font-family: $font-manrope;
+		font-size: 20px;
+	}
+	.full {
+		border-radius: 20px;
+		overflow: hidden;
+		background-color: #f2f2f2;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px;
+		img {
+			max-width: 100%;
+			height: 200px;
+			object-fit: contain;
+		}
+	}
+	.previews {
+		a {
+			&:not(:last-child) {
+				margin-bottom: 14px;
+			}
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+			overflow: hidden;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 120px;
+			img {
+				width: 100%;
+				max-width: 150px;
+				height: auto;
+			}
+			&:hover,
+			&.selected {
+				border: 1px solid #9b9ca0;
+			}
+		}
+	}
+
+	.pop-details {
+		padding-top: 20px;
+		h4 {
+			font-family: $font-manrope;
+			font-size: 18px;
+			margin-bottom: 16px;
+		}
+	}
+	.table {
+		background-color: #f2f2f2;
+		color: #4a4a4a;
+		vertical-align: top;
+		border-color: red;
+		border-radius: 10px;
+		margin-bottom: 0;
+		overflow: hidden;
+		thead {
+			background-color: #848691;
+			border: 1px solid #d9d9d9;
+			th {
+				color: #d9d9d9;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 15px;
+			}
+		}
+		tbody {
+			td {
+				font-size: 14px;
+				color: #4a4a4a;
+				box-shadow: none;
+			}
+		}
+	}
+
+  .modal-foot{
+    border-top: 1px solid #dee2e6;
+    padding: 15px 0px;
   }
-  .modal-header{
+  .pop-buttons{
 
   }
-  .modal-title{
-    font-family: $font-manrope;
-    font-size: 20px;
-  }
-  .full{
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #F2F2F2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-   img{
-    max-width: 100%;
-    height: 200px;
-    object-fit: contain;
-   }
-  }
-  .previews{
-    a{
-      &:not(:last-child) {
-      margin-bottom: 14px;
-      }
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #F2F2F2;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      height: 120px;
-      img{
-        width:100%;
-        max-width: 150px;
-        height: auto;
-      }
-      &:hover,&.selected{
-        border: 1px solid #9B9CA0;
-      }
+  .btn-pop{
+    text-decoration: none;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 17px;
+    font-size: 14px;
+    color: $bg-white;
+    background-color: $primary-color;
+    border-radius: 50px;
+    transition: all .2s ease-in;
+    img{
+      height: 20px;
+    }
+    &:hover{
+      background-color: darken($color: $primary-color, $amount: 10%);
+      color: $bg-white;
     }
   }
-
 }

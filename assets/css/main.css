@@ -981,7 +981,14 @@ h6 a {
 --------------------------------------------------------------*/
 .p-modal .modal-content {
   border-radius: 20px;
+  border: 0;
   overflow: hidden;
+}
+.p-modal .modal-header {
+  border-radius: 0;
+}
+.p-modal .modal-body {
+  padding: 20px 10px;
 }
 .p-modal .modal-title {
   font-family: "Manrope", sans-serif;
@@ -990,7 +997,7 @@ h6 a {
 .p-modal .full {
   border-radius: 20px;
   overflow: hidden;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,6 +1009,7 @@ h6 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 .p-modal .full img {
   max-width: 100%;
@@ -1019,7 +1027,7 @@ h6 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -1036,7 +1044,71 @@ h6 a {
   height: auto;
 }
 .p-modal .previews a:hover, .p-modal .previews a.selected {
-  border: 1px solid #9B9CA0;
+  border: 1px solid #9b9ca0;
+}
+.p-modal .pop-details {
+  padding-top: 20px;
+}
+.p-modal .pop-details h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.p-modal .table {
+  background-color: #f2f2f2;
+  color: #4a4a4a;
+  vertical-align: top;
+  border-color: red;
+  border-radius: 10px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.p-modal .table thead {
+  background-color: #848691;
+  border: 1px solid #d9d9d9;
+}
+.p-modal .table thead th {
+  color: #d9d9d9;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+}
+.p-modal .table tbody td {
+  font-size: 14px;
+  color: #4a4a4a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.p-modal .modal-foot {
+  border-top: 1px solid #dee2e6;
+  padding: 15px 0px;
+}
+.p-modal .btn-pop {
+  text-decoration: none;
+  border: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 9px 17px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #658CBB;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.p-modal .btn-pop img {
+  height: 20px;
+}
+.p-modal .btn-pop:hover {
+  background-color: #4972a4;
+  color: #FFFFFF;
 }
 
 /*--------------------------------------------------------------
