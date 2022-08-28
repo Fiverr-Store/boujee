@@ -7,13 +7,6 @@
 		document.querySelector(".page-loader").style.display = "none";
 	}
 
-   window.addEventListener('load', function() {
-    var myModal = new bootstrap.Modal(document.getElementById('p-modal'))
-     setTimeout(function(){
-      myModal.show();
-     }, 200);
-  })
-
 	window.onscroll = function () {
 		var header_navbar = document.querySelector(".navbar-area");
 		var sticky = header_navbar.offsetTop;
@@ -88,10 +81,6 @@
       }
     });
 
-//========= glightbox
-const glightbox = GLightbox({
-  selector: ".glightbox",
-});
 
 
 
