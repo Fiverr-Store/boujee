@@ -109,9 +109,16 @@
 		}
 	}
 	.previews {
+    @media only screen and (max-width: 991px) {
+     display: flex;
+     justify-content: center;
+    }
 		a {
 			&:not(:last-child) {
 				margin-bottom: 14px;
+        @media only screen and (max-width: 991px) {
+         margin-bottom: 0;
+        }
 			}
 			display: flex;
 			align-items: center;
@@ -122,16 +129,27 @@
 			text-align: center;
 			padding-top: 10px;
 			padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
 			height: 120px;
 			img {
 				width: 100%;
 				max-width: 150px;
 				height: auto;
+        @media only screen and (max-width: 991px) {
+         max-width: 100px;
+        }
 			}
 			&:hover,
 			&.selected {
 				border: 1px solid #9b9ca0;
 			}
+      @media only screen and (max-width: 991px) {
+       display: inline-flex;
+       flex-direction: column;
+       height: 100px;
+       margin: 0px 5px;
+      }
 		}
 	}
 
@@ -173,6 +191,9 @@
   .modal-foot{
     border-top: 1px solid #dee2e6;
     padding: 15px 0px;
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+     }
   }
   .pop-buttons{
 
