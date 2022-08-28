@@ -87,7 +87,7 @@
 		border-radius: 0;
 	}
 	.modal-body {
-		padding: 20px 10px;
+		padding: 20px 4px;
 	}
 	.modal-title {
 		font-family: $font-manrope;
@@ -180,6 +180,9 @@
 				text-transform: uppercase;
 				font-weight: 400;
 				font-size: 15px;
+        @media only screen and (max-width: 767px) {
+         font-size: 14px;
+        }
 			}
 		}
 		tbody {
@@ -187,6 +190,9 @@
 				font-size: 14px;
 				color: #4a4a4a;
 				box-shadow: none;
+        @media only screen and (max-width: 767px) {
+         font-size: 13px;
+        }
 			}
 		}
 	}
