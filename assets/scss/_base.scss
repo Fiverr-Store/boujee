@@ -8,7 +8,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 16px;
-  background-color: #F2F2F2;
+  background-color: $main-color;
 	color: $text-color;
 	line-height: 1.6;
   @media only screen and (max-width: 767px) {
@@ -120,7 +120,7 @@ h6 a {
     top: 0;
     left: 0;
     z-index: 99999999;
-    background-color: $bg-white;
+    background-color: $main-color;
   }
 
   .lds-spinner {

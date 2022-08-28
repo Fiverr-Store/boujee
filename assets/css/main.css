@@ -125,7 +125,7 @@ h6 a {
   top: 0;
   left: 0;
   z-index: 99999999;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .lds-spinner {
@@ -877,6 +877,166 @@ h6 a {
 .about-us .swiper-button-disabled {
   background-color: #5957c9;
   opacity: 0.15;
+}
+
+/*--------------------------------------------------------------
+# page-hero
+--------------------------------------------------------------*/
+.page-hero {
+  position: relative;
+  padding-top: 122px;
+}
+@media only screen and (max-width: 991px) {
+  .page-hero {
+    padding-top: 0px;
+    margin-top: 50px;
+    background-image: url("../img/product-page/page-m-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .page-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-hero {
+    height: 250px;
+  }
+}
+.page-hero .page-bg {
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .page-hero .page-bg {
+    background-image: url("../img/product-page/page-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .page-hero .page-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+}
+.page-hero .page-text {
+  position: relative;
+}
+.page-hero .page-text h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 991px) {
+  .page-hero .page-text h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-hero .page-text h1 {
+    font-size: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# p-modal
+--------------------------------------------------------------*/
+.p-modal .modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.p-modal .modal-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+}
+.p-modal .full {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #F2F2F2;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.p-modal .full img {
+  max-width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.p-modal .previews a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 120px;
+}
+.p-modal .previews a:not(:last-child) {
+  margin-bottom: 14px;
+}
+.p-modal .previews a img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+.p-modal .previews a:hover, .p-modal .previews a.selected {
+  border: 1px solid #9B9CA0;
 }
 
 /*--------------------------------------------------------------

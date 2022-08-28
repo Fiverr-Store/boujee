@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+# page-hero
+--------------------------------------------------------------*/
+.page-hero {
+  position: relative;
+	padding-top: 122px;
+  @media only screen and (max-width: 991px) {
+   padding-top: 0px;
+   margin-top: 50px;
+   background-image: url("../img/product-page/page-m-bg.png");
+   background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($bg-black, 0.54);
+    }
+  }
+  @media only screen and (max-width: 767px) {
+   height: 250px;
+  }
+	.page-bg {
+		position: relative;
+    @media only screen and (min-width: 992px) {
+      background-image: url("../img/product-page/page-bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($bg-black, 0.54);
+      }
+    }
+
+	}
+  .page-text{
+    position: relative;
+    h1{
+      font-size: 40px;
+      font-weight: 400;
+      color: $bg-white;
+      @media only screen and (max-width: 991px) {
+       font-size: 35px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 30px;
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+# p-modal
+--------------------------------------------------------------*/
+
+.p-modal{
+  .modal-content{
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .modal-header{
+
+  }
+  .modal-title{
+    font-family: $font-manrope;
+    font-size: 20px;
+  }
+  .full{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   img{
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+   }
+  }
+  .previews{
+    a{
+      &:not(:last-child) {
+      margin-bottom: 14px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F2F2F2;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 120px;
+      img{
+        width:100%;
+        max-width: 150px;
+        height: auto;
+      }
+      &:hover,&.selected{
+        border: 1px solid #9B9CA0;
+      }
+    }
+  }
+
+}
