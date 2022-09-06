@@ -32,7 +32,9 @@
     }
   }
   .p-single{
-    background-color: rgba(155, 156, 160, 0.15);
+    // background-color: rgba(155, 156, 160, 0.15);
+    background-color: $bg-white;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
     border-radius: 22px;
     padding: 15px 20px;
     height: 100%;

@@ -513,8 +513,8 @@ h6 a {
 --------------------------------------------------------------*/
 .hero-area {
   position: relative;
-  background-image: url("../img/hero/hero-main.jpg");
-  background-position: center;
+  background-image: url("../img/hero/hero-bg.jpg");
+  background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -552,7 +552,7 @@ h6 a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #658cbb;
+  background-color: #000;
   opacity: 0.2;
 }
 .hero-area .hero-inner {
@@ -631,7 +631,9 @@ h6 a {
   }
 }
 .product-sec .p-single {
-  background-color: rgba(155, 156, 160, 0.15);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
   border-radius: 22px;
   padding: 15px 20px;
   height: 100%;
@@ -1009,18 +1011,12 @@ h6 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
 }
 .p-modal .full img {
   max-width: 100%;
-  height: 200px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-@media only screen and (max-width: 767px) {
-  .p-modal .full img {
-    height: 160px;
-  }
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-width: 991px) {
   .p-modal .previews {
@@ -1043,13 +1039,10 @@ h6 a {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #f2f2f2;
+  border: 1px solid #DD6C2C;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
   height: 120px;
 }
 .p-modal .previews a:not(:last-child) {
@@ -1062,16 +1055,13 @@ h6 a {
 }
 .p-modal .previews a img {
   width: 100%;
-  max-width: 150px;
-  height: auto;
-}
-@media only screen and (max-width: 991px) {
-  .p-modal .previews a img {
-    max-width: 100px;
-  }
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-modal .previews a:hover, .p-modal .previews a.selected {
-  border: 1px solid #9b9ca0;
+  opacity: 0.6;
 }
 @media only screen and (max-width: 991px) {
   .p-modal .previews a {
