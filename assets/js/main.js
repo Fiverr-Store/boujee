@@ -8,7 +8,7 @@
 	}
 
   //  window.addEventListener('load', function() {
-  //   var myModal = new bootstrap.Modal(document.getElementById('p-hema'))
+  //   var myModal = new bootstrap.Modal(document.getElementById('p-torino'))
   //    setTimeout(function(){
   //     myModal.show();
   //    }, 200);
