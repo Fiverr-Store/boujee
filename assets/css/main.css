@@ -1019,6 +1019,13 @@ h6 a {
      object-fit: cover;
 }
 @media only screen and (max-width: 991px) {
+  .p-modal .full img {
+    height: auto;
+    -o-object-fit: none;
+       object-fit: none;
+  }
+}
+@media only screen and (max-width: 991px) {
   .p-modal .previews {
     display: -webkit-box;
     display: -ms-flexbox;
