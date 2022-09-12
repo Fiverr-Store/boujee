@@ -513,7 +513,7 @@ h6 a {
 --------------------------------------------------------------*/
 .hero-area {
   position: relative;
-  background-image: url("../img/hero/hero-bg.jpg");
+  background-image: url("../img/hero/3.jpg");
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1169,6 +1169,7 @@ h6 a {
 .main-footer {
   padding: 50px 0px 30px 0px;
   background-color: rgba(70, 134, 160, 0.2);
+  background: linear-gradient(90.09deg, #0A5E78 2.15%, #4A8EA7 47.91%, #0A5E78 99.91%);
 }
 @media only screen and (max-width: 767px) {
   .main-footer {
@@ -1199,12 +1200,12 @@ h6 a {
   }
 }
 .main-footer p {
-  color: #4a4a4a;
+  color: #eee;
   font-size: 14px;
   line-height: 1.5;
 }
 .main-footer a {
-  color: #4a4a4a;
+  color: #eee;
   font-size: 14px;
 }
 .main-footer .footer-links {
@@ -1218,7 +1219,7 @@ h6 a {
 .main-footer .footer-links a {
   display: inline-block;
   text-decoration: none;
-  color: #4a4a4a;
+  color: #eee;
   font-size: 14px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -1235,6 +1236,22 @@ h6 a {
   border-radius: 10px;
   height: 42px;
   font-size: 14px;
+  color: #eee;
+}
+.main-footer .footer-form .form-control::-webkit-input-placeholder {
+  color: #eee;
+}
+.main-footer .footer-form .form-control::-moz-placeholder {
+  color: #eee;
+}
+.main-footer .footer-form .form-control:-ms-input-placeholder {
+  color: #eee;
+}
+.main-footer .footer-form .form-control::-ms-input-placeholder {
+  color: #eee;
+}
+.main-footer .footer-form .form-control::placeholder {
+  color: #eee;
 }
 .main-footer .footer-form .btn-submit {
   display: inline-block;
@@ -1267,6 +1284,8 @@ h6 a {
 }
 .main-footer .footer-social a img {
   height: 22px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 .main-footer .legal {
   text-align: center;

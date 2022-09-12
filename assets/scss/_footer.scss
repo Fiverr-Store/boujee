@@ -5,6 +5,7 @@
 .main-footer {
 	padding: 50px 0px 30px 0px;
 	background-color: rgba(70, 134, 160, 0.2);
+  background: linear-gradient(90.09deg, #0A5E78 2.15%, #4A8EA7 47.91%, #0A5E78 99.91%);
   @media only screen and (max-width: 767px) {
     padding: 33px 0px 30px 0px;
   }
@@ -30,12 +31,12 @@
 		}
 	}
 	p {
-		color: #4a4a4a;
+		color: #eee;
 		font-size: 14px;
 		line-height: 1.5;
 	}
 	a {
-		color: #4a4a4a;
+		color: #eee;
 		font-size: 14px;
 	}
 	.footer-links {
@@ -50,7 +51,7 @@
 		a {
 			display: inline-block;
 			text-decoration: none;
-			color: #4a4a4a;
+			color: #eee;
 			font-size: 14px;
 			transition: all 0.2s ease-in;
 			&:hover {
@@ -66,6 +67,10 @@
 			border-radius: 10px;
 			height: 42px;
 			font-size: 14px;
+      color: #eee;
+      &::placeholder{
+        color: #eee;
+      }
 		}
 		.btn-submit {
 			display: inline-block;
@@ -97,6 +102,7 @@
       display: inline-block;
       img{
         height: 22px;
+        filter: invert(100%);
       }
     }
   }
