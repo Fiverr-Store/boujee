@@ -108,7 +108,7 @@
 			object-fit: cover;
       @media only screen and (max-width: 991px) {
         height: auto;
-        object-fit: none;
+        object-fit: fill;
       }
 		}
 	}
