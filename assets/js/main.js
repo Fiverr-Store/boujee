@@ -8,7 +8,7 @@
 	}
 
   //  window.addEventListener('load', function() {
-  //   var myModal = new bootstrap.Modal(document.getElementById('p-torino'))
+  //   var myModal = new bootstrap.Modal(document.getElementById('p-modal'))
   //    setTimeout(function(){
   //     myModal.show();
   //    }, 200);

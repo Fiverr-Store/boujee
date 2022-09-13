@@ -1227,46 +1227,6 @@ h6 a {
 .main-footer .footer-links a:hover {
   text-decoration: underline;
 }
-.main-footer .footer-form {
-  position: relative;
-}
-.main-footer .footer-form .form-control {
-  background-color: transparent;
-  border: 1px solid #4a4a4a;
-  border-radius: 10px;
-  height: 42px;
-  font-size: 14px;
-  color: #eee;
-}
-.main-footer .footer-form .form-control::-webkit-input-placeholder {
-  color: #eee;
-}
-.main-footer .footer-form .form-control::-moz-placeholder {
-  color: #eee;
-}
-.main-footer .footer-form .form-control:-ms-input-placeholder {
-  color: #eee;
-}
-.main-footer .footer-form .form-control::-ms-input-placeholder {
-  color: #eee;
-}
-.main-footer .footer-form .form-control::placeholder {
-  color: #eee;
-}
-.main-footer .footer-form .btn-submit {
-  display: inline-block;
-  text-decoration: none;
-  height: 42px;
-  padding: 5px 20px;
-  font-size: 14px;
-  background-color: #658CBB;
-  color: #FFFFFF;
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-}
 .main-footer .footer-social {
   list-style: none;
   margin: 0;
